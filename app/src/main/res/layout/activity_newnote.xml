@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0DC"
+    android:orientation="vertical"
+    tools:context=".Newnote">
+
+    <EditText
+        android:id="@+id/edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:enabled="true"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:minLines="8"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:hint="@string/input_note"
+        android:background="@drawable/rounded_edittext"
+        />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/my_button"
+        android:text="@string/cancel_name"
+        />
+
+</LinearLayout>
