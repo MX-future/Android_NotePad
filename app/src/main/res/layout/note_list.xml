@@ -2,26 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/note_content"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:textColor="#000"
-        android:padding="10dp"
-        />
+        android:layout_height="match_parent"
+        android:background="@drawable/item_shape"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/note_time"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="10dp"
-        android:textColor="#000"
-        android:paddingLeft="12dp"
-        android:paddingBottom="5dp"
-        />
+        <TextView
+            android:id="@+id/note_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:maxEms="6"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:padding="10dp"
+            />
 
+        <TextView
+            android:id="@+id/note_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#000"
+            android:paddingLeft="12dp"
+            android:paddingBottom="5dp"
+            />
+    </LinearLayout>
 
 </LinearLayout>
+
