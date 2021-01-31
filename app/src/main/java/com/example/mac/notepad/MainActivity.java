@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private List<Map<String,Object>> list;     //String为key值，Object为value值
     private Map<String,Object>  map;
     private ListView listview;
+    private TextView empty;  // 空数据提示
 
     //右上角新建按钮
     @Override
@@ -111,12 +112,13 @@ public class MainActivity extends AppCompatActivity {
 
     //显示ListView的方法
     public void showListView(){
-        listview= findViewById(R.id.list_view);
+        listview=findViewById(R.id.list_view);
+        empty=findViewById(R.id.empty_tv);
+        listview.setEmptyView(empty);
         list=new ArrayList<Map<String, Object>>();
         //获取数据源
         createData();
         listview.setAdapter(adapter);
-
     }
 
     //删除便签的方法

@@ -14,6 +14,17 @@
         android:layout_width="match_parent"
         android:divider="#FFFFFF"
         android:listSelector="#f5f6fa"
+        android:visibility="gone"
         android:layout_height="match_parent" />
+    <!--提示视图-->
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="添加一个便签吧"
+        android:textSize="25sp"
+        android:visibility="visible" />
 
 </LinearLayout>
